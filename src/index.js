@@ -87,10 +87,10 @@ function showNotFound() {
 }
 
 
-function showModal(evt) {
-    if (evt.target.nodeName === 'IMG') {
-        const instance = basicLightbox.create(`<img src="${evt.target.dataset.source}">`);
-        instance.show();
-    }      
-}
+// function showModal(evt) {
+//     if (evt.target.nodeName === 'IMG') {
+//         const instance = basicLightbox.create(`<img src="${evt.target.dataset.source}">`);
+//         instance.show();
+//     }      
+// }
         
