@@ -1,7 +1,7 @@
 import './styles.css';
 import _ from 'lodash';
 
-import * as basicLightbox from 'basiclightbox';
+import * as basicLightbox from '../node_modules/basiclightbox/dist/basicLightbox.min';
 import '../node_modules/basiclightbox/dist/basicLightbox.min.css';
 
 import { error } from '@pnotify/core';
