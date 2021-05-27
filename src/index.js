@@ -1,6 +1,9 @@
 import './styles.css';
 import _ from 'lodash';
 
+import * as basicLightbox from 'basiclightbox';
+import '../node_modules/basiclightbox/dist/basicLightbox.min.css';
+
 import { error } from '@pnotify/core';
 import "../node_modules/@pnotify/core/dist/PNotify.css";
 import "../node_modules/@pnotify/core/dist/BrightTheme.css";
@@ -87,10 +90,10 @@ function showNotFound() {
 }
 
 
-// function showModal(evt) {
-//     if (evt.target.nodeName === 'IMG') {
-//         const instance = basicLightbox.create(`<img src="${evt.target.dataset.source}">`);
-//         instance.show();
-//     }      
-// }
+function showModal(evt) {
+    if (evt.target.nodeName === 'IMG') {
+        const instance = basicLightbox.create(`<img src="${evt.target.dataset.source}">`);
+        instance.show();
+    }      
+}
         
