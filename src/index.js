@@ -54,16 +54,19 @@ async function onGetMoreImages(evt) {
 
     const array = await apiService.fetchImages();
     renderCountryCard(array);
-    refs.container.scrollIntoView({ behavior: 'smooth', block: 'end', });      
+         
 }
 
 function renderCountryCard(img) {
     const markup = imgListTpl(img);
     refs.container.insertAdjacentHTML('beforeend', markup);
+    refs.container.scrollIntoView({ behavior: 'smooth', block: 'end', });
+    refs.btn.classList.remove('visually-hidden');
 }
 
 function clearContainer() {
     refs.container.innerHTML = '';
+    refs.btn.classList.add('visually-hidden');
 }
 
 function showNotFound() {
